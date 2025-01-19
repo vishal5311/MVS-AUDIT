@@ -15,22 +15,7 @@ function ServiceCard({ title, description, icon }) {
             </div>
             <h3 className="text-xl font-semibold mb-4 text-blue-900">{title}</h3>
             <p className="text-gray-600 mb-4">{description}</p>
-            <button className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
-                Learn More
-                <svg
-                    className="w-4 h-4 ml-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 5l7 7-7 7"
-                    />
-                </svg>
-            </button>
+            
         </div>
     );
 }
