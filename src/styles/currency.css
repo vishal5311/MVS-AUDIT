@@ -1,0 +1,57 @@
+/* Style for the container holding both calculators */
+.calculators-container {
+  display: flex;
+  justify-content: space-between; /* Space them evenly */
+  gap: 20px; /* Add space between the calculators */
+  margin-top: 2rem; /* Optional margin for spacing */
+}
+
+/* Optional: Add styling for individual calculators */
+.tax-calculator,
+.currency-converter {
+  flex: 1; /* Each calculator takes up equal space */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Center the calculators and apply borders */
+.calculators-container {
+    display: flex;
+    justify-content: center; /* Centers the calculators horizontally */
+    gap: 20px; /* Space between calculators */
+    margin-top: 2rem; /* Optional margin for spacing */
+    padding: 20px; /* Optional padding for better spacing */
+  }
+  
+  /* Style for individual calculator components */
+  .tax-calculator,
+  .currency-converter {
+    flex: 1;
+    max-width: 45%; /* Ensure calculators don't stretch too wide */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #e0e0e0; /* Light border color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean look */
+    background-color: #fff; /* White background for both calculators */
+    transition: transform 0.3s ease; /* Smooth hover transition */
+  }
+  
+  /* Hover effect for each calculator */
+  .tax-calculator:hover,
+  .currency-converter:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  /* Optional: Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .calculators-container {
+      flex-direction: column; /* Stack calculators vertically */
+      gap: 15px; /* Reduce space between calculators */
+    }
+  
+    .tax-calculator,
+    .currency-converter {
+      max-width: 100%; /* Ensure full width on smaller screens */
+    }
+  }
+  
